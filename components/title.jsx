@@ -13,6 +13,18 @@ const Title = () => {
         crafted to empower developers like you to create stunning, responsive,
         and feature-rich UIs effortlessly.
       </h2>
+      <div className="flex flex-row flex-wrap gap-4 w-full h-auto items-center justify-center mt-8 lg:mt-16">
+        <button className="bg-white/10 transition-all hover:bg-white/20 flex flex-row gap-2 items-center w-full lg:w-auto rounded-full px-4 py-2 mt-0">
+          <p className="text-[#FFFFFF]/80 font-medium text-sm tracking-tight leading-relaxed">
+            Documentations
+          </p>
+        </button>
+        <button className="bg-white/10 transition-all hover:bg-white/20 flex flex-row gap-2 items-center w-full lg:w-auto rounded-full px-4 py-2 mt-0">
+          <p className="text-[#FFFFFF]/80 font-medium text-sm tracking-tight leading-relaxed">
+            Find Components
+          </p>
+        </button>
+      </div>
     </main>
   );
 };
