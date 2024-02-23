@@ -1,9 +1,7 @@
-import Title from "@/components/title";
+import React from "react";
+
+const { default: LandingLayout } = require("../module/layouts/landing");
 
 export default function Home() {
-  return (
-    <main>
-      <Title />
-    </main>
-  );
+  return <LandingLayout />;
 }
