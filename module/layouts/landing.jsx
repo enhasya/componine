@@ -2,8 +2,9 @@ import React from "react";
 
 import CSS from "@/module/styles/landing.module.css";
 
-const { default: Title } = require("@/components/landing/title");
 const { default: Navbar } = require("@/components/navbar");
+const { default: Title } = require("@/components/landing/title");
+const { default: ReadMore } = require("@/components/landing/readmore");
 
 const LandingLayout = () => {
   return (
@@ -12,6 +13,7 @@ const LandingLayout = () => {
         <Navbar />
         <Title />
       </div>
+      <ReadMore />
     </main>
   );
 };
