@@ -16,17 +16,17 @@ const Context = {
 
 const Title = () => {
   return (
-    <main className="flex flex-col w-full h-auto p-8 lg:p-32 items-start justify-center">
-      <h2 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[640px] mt-0">
+    <main className="flex flex-col w-full h-auto px-8 pt-0 pb-8 lg:p-32 items-center justify-center">
+      <h2 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[640px] mt-0">
         {Context.Subtitle}
       </h2>
-      <h1 className="text-[#F13F0C] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-4 lg:mt-8">
+      <h1 className="text-[#F13F0C] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[480px] mt-4 lg:mt-8">
         {Context.Title}<span className="text-[#161619]"> — React.js Components Library</span>
       </h1>
-      <h3 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-4 lg:mt-8">
+      <h3 className="text-[#161619]/80 font-medium text-xs lg:text-base tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[640px] mt-4 lg:mt-8">
         {Context.Description}{" "}
       </h3>
-      <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-start mt-8 lg:mt-16">
+      <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-center mt-8 lg:mt-16">
         <Links
           background={"bg-[#F13F0C]/10"}
           backgroundhover={"hover:bg-[#F13F0C]/20"}
@@ -63,7 +63,7 @@ const Links = ({ background, backgroundhover, ring, text, icon, name }) => {
     >
       <Image src={icon} width="16" height="16" />
       <p
-        className={`hidden lg:flex ${text} font-medium text-sm tracking-tight leading-relaxed`}
+        className={`hidden lg:flex ${text} font-medium text-xs tracking-tight leading-relaxed`}
       >
         {name}
       </p>
