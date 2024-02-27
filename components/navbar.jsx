@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const { default: Upcoming } = require("@/shared/icons/wind-01-colorized.svg");
+const { default: Expand } = require("@/shared/icons/chevron-down-dark.svg");
 
 const Context = {
   Introduction: "Introducing Componine",
@@ -12,6 +13,12 @@ const Navbar = () => {
   return (
     <nav className="bg-[#F8F8FF] lg:bg-transparent lg:hover:bg-opacity-10 border-b-0 lg:border-b lg:border-transparent backdrop-blur-none transition-all lg:hover:border-b lg:hover:border-b-white/10 lg:hover:backdrop-blur-lg flex flex-col lg:flex-row gap-4 lg:gap-0 w-full h-auto px-8 py-8 pb-0 lg:px-32 lg:py-4 items-center justify-between">
       <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-2 items-start lg:items-center justify-start">
+        <div className="flex lg:hidden flex-row w-full lg:w-auto gap-4 lg:gap-2 items-center justify-between">
+          <Section name={"Componine"} />
+          <button className="bg-[#161619]/10 ring-1 ring-[#161619] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#161619]/20 flex flex-row gap-2 items-center w-auto rounded-none lg:rounded-full px-4 py-2 mt-0">
+            <Image src={Expand} width="14" height="14" />
+          </button>
+        </div>
         <Notifications />
       </div>
       <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-2 items-start lg:items-center justify-end">
