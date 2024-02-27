@@ -7,7 +7,7 @@ const {
   default: ExploreNow,
 } = require("@/shared/icons/down-arrow-colorized.svg");
 
-const App = {
+const Context = {
   Subtitle: "Where Stability, Speed, and Value Converge. Meet.",
   Title: "Componine",
   Description:
@@ -17,31 +17,31 @@ const App = {
 const Title = () => {
   return (
     <main className="flex flex-col w-full h-auto p-8 lg:p-32 items-start justify-center">
-      <h3 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
-        {App.Subtitle}
-      </h3>
-      <h1 className="text-[#F13F0C] font-semibold text-4xl lg:text-6xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
-        {App.Title}
-      </h1>
-      <h2 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-8 lg:mt-16">
-        {App.Description}{" "}
+      <h2 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
+        {Context.Subtitle}
       </h2>
+      <h1 className="text-[#F13F0C] font-semibold text-4xl lg:text-6xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
+        {Context.Title}
+      </h1>
+      <h3 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-8 lg:mt-16">
+        {Context.Description}{" "}
+      </h3>
       <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-start mt-8 lg:mt-16">
-        <Context
+        <Links
           background={"bg-[#F13F0C]/10"}
           backgroundhover={"hover:bg-[#F13F0C]/20"}
           text={"text-[#F13F0C]"}
           icon={ExploreNow}
           name={"Explore Now"}
         />
-        <Context
+        <Links
           background={"bg-[#161619]/10"}
           backgroundhover={"hover:bg-[#161619]/20"}
           text={"text-[#161619]"}
           icon={Documentations}
           name={"Documentations"}
         />
-        <Context
+        <Links
           background={"bg-[#161619]/10"}
           backgroundhover={"hover:bg-[#161619]/20"}
           text={"text-[#161619]"}
@@ -55,7 +55,7 @@ const Title = () => {
 
 export default Title;
 
-const Context = ({ background, backgroundhover, text, icon, name }) => {
+const Links = ({ background, backgroundhover, text, icon, name }) => {
   return (
     <button
       className={`${background} transition-all ${backgroundhover} flex flex-row gap-2 items-center w-auto rounded-full px-4 py-2 mt-0`}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const { default: Upcoming } = require("@/shared/icons/wind-01-colorized.svg");
 
-const ContextMessage = {
+const Update = {
   Introduction: "Introducing Componine",
   Description: "It is an Ode To the Artistry of React.js",
 };
@@ -36,8 +36,8 @@ const Context = () => {
     <button className="bg-[#F13F0C]/10 ring-1 ring-[#F13F0C] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#F13F0C]/20 flex flex-row gap-2 items-center w-full lg:w-auto rounded-none lg:rounded-full px-4 py-2 mt-0">
       <Image src={Upcoming} width="14" height="14" />
       <p className="text-[#161619] font-medium text-xs tracking-tight leading-relaxed">
-        <span className="font-bold">{ContextMessage.Introduction}</span> —{" "}
-        <span className="text-[#161619]/80">{ContextMessage.Description}</span>
+        <span className="font-bold">{Update.Introduction}</span> —{" "}
+        <span className="text-[#161619]/80">{Update.Description}</span>
       </p>
     </button>
   );
