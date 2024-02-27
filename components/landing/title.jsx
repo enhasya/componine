@@ -8,7 +8,7 @@ const {
 } = require("@/shared/icons/down-arrow-colorized.svg");
 
 const Context = {
-  Subtitle: "Where Stability, Speed, and Value Converge. Meet.",
+  Subtitle: "Where Stability, Speed, and Value Converge meet",
   Title: "Componine",
   Description:
     "Unlock the full potential of your React.js projects. The ultimate collection of meticulously crafted and highly customizable React components. Elevate your web development experience by integrating our components seamlessly into your applications, saving time and ensuring a polished, professional look.",
@@ -30,6 +30,7 @@ const Title = () => {
         <Links
           background={"bg-[#F13F0C]/10"}
           backgroundhover={"hover:bg-[#F13F0C]/20"}
+          ring={"ring-1 ring-[#F13F0C]"}
           text={"text-[#F13F0C]"}
           icon={ExploreNow}
           name={"Explore Now"}
@@ -55,10 +56,10 @@ const Title = () => {
 
 export default Title;
 
-const Links = ({ background, backgroundhover, text, icon, name }) => {
+const Links = ({ background, backgroundhover, ring, text, icon, name }) => {
   return (
     <button
-      className={`${background} transition-all ${backgroundhover} flex flex-row gap-2 items-center w-auto rounded-full px-4 py-2 mt-0`}
+      className={`${background} transition-all ${backgroundhover} ${ring} flex flex-row gap-2 items-center w-auto rounded-full px-4 py-2 mt-0`}
     >
       <Image src={icon} width="16" height="16" />
       <p
