@@ -1,16 +1,18 @@
 import React from "react";
 import Image from "next/image";
 
+import CSS from "@/module/styles/landing.module.css"
+
 const {
   default: Documentations,
-} = require("../shared/icons/book-02-white.svg");
+} = require("@/shared/icons/book-02-white.svg");
 const {
   default: FindComponents,
-} = require("../shared/icons/compass-white.svg");
+} = require("@/shared/icons/compass-white.svg");
 
 const Title = () => {
   return (
-    <main className="bg-[#161619] flex flex-col w-full h-screen lg:h-auto p-8 lg:p-32 items-center justify-center">
+    <main className={`${CSS.title} flex flex-col w-full h-auto lg:h-[640px] p-8 lg:p-32 items-center justify-center`}>
       <h1 className="text-[#FFFFFF] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[720px] mt-0">
         It is an Ode To the Artistry of React.js —{" "}
         <span className="text-[#E6F40B]">Componine</span>
