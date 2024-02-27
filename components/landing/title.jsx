@@ -17,13 +17,13 @@ const Context = {
 const Title = () => {
   return (
     <main className="flex flex-col w-full h-auto p-8 lg:p-32 items-start justify-center">
-      <h2 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
+      <h2 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[640px] mt-0">
         {Context.Subtitle}
       </h2>
-      <h1 className="text-[#F13F0C] font-semibold text-4xl lg:text-6xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
-        {Context.Title}
+      <h1 className="text-[#F13F0C] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-4 lg:mt-8">
+        {Context.Title}<span className="text-[#161619]"> — React.js Components Library</span>
       </h1>
-      <h3 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-8 lg:mt-16">
+      <h3 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-4 lg:mt-8">
         {Context.Description}{" "}
       </h3>
       <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-start mt-8 lg:mt-16">

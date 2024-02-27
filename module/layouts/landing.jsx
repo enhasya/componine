@@ -7,9 +7,11 @@ const { default: Navbar } = require("@/components/navbar");
 
 const LandingLayout = () => {
   return (
-    <main className={`${CSS.title}`}>
-      <Navbar />
-      <Title />
+    <main>
+      <div className={`${CSS.title}`}>
+        <Navbar />
+        <Title />
+      </div>
     </main>
   );
 };
