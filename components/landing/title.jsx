@@ -1,32 +1,39 @@
 import React from "react";
 import Image from "next/image";
 
-import CSS from "@/module/styles/landing.module.css";
-
 const { default: Documentations } = require("@/shared/icons/book-02-dark.svg");
 const { default: FindComponents } = require("@/shared/icons/compass-dark.svg");
-const { default: Support } = require("@/shared/icons/thumb-up-light.svg");
+const {
+  default: ExploreNow,
+} = require("@/shared/icons/down-arrow-colorized.svg");
 
 const App = {
-  Subtitle: "It is an Ode To the Artistry of React.js",
+  Subtitle: "Where Stability, Speed, and Value Converge. Meet.",
   Title: "Componine",
   Description:
-    "Ready to supercharge your development projects? Componine is here to revolutionize the way you build dynamic and engaging user interfaces.",
+    "Unlock the full potential of your React.js projects. The ultimate collection of meticulously crafted and highly customizable React components. Elevate your web development experience by integrating our components seamlessly into your applications, saving time and ensuring a polished, professional look.",
 };
 
 const Title = () => {
   return (
     <main className="flex flex-col w-full h-auto p-8 lg:p-32 items-start justify-center">
-      <h3 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[640px] mt-0">
+      <h3 className="text-[#161619]/80 font-medium text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
         {App.Subtitle}
       </h3>
-      <h1 className="text-[#F13F0C] font-semibold text-4xl lg:text-6xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[640px] mt-0">
+      <h1 className="text-[#F13F0C] font-semibold text-4xl lg:text-6xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-0">
         {App.Title}
       </h1>
-      <h2 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[640px] mt-8 lg:mt-16">
-        {App.Description}
+      <h2 className="text-[#161619]/80 font-medium text-sm lg:text-lg tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-8 lg:mt-16">
+        {App.Description}{" "}
       </h2>
       <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-start mt-8 lg:mt-16">
+        <Context
+          background={"bg-[#F13F0C]/10"}
+          backgroundhover={"hover:bg-[#F13F0C]/20"}
+          text={"text-[#F13F0C]"}
+          icon={ExploreNow}
+          name={"Explore Now"}
+        />
         <Context
           background={"bg-[#161619]/10"}
           backgroundhover={"hover:bg-[#161619]/20"}

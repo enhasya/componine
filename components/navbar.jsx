@@ -12,7 +12,6 @@ const Navbar = () => {
   return (
     <nav className="bg-[#F8F8FF] lg:bg-transparent lg:hover:bg-opacity-10 border-b-0 lg:border-b lg:border-transparent backdrop-blur-none transition-all lg:hover:border-b lg:hover:border-b-white/10 lg:hover:backdrop-blur-lg flex flex-col lg:flex-row gap-4 lg:gap-0 w-full h-auto px-8 py-8 pb-0 lg:px-32 lg:py-4 items-center justify-between">
       <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-2 items-start lg:items-center justify-start">
-        <Section name={"Componine"} />
         <Context />
       </div>
       <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-2 items-start lg:items-center justify-end">
