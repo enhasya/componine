@@ -13,7 +13,7 @@ const Context = {
     "Unlock the full potential of your React.js projects. The ultimate collection of meticulously crafted and highly customizable React components. Elevate your web development experience by integrating our components seamlessly into your applications, saving time and ensuring a polished, professional look.",
 };
 
-const ReadMore = () => {
+const Documentations = () => {
   return (
     <main className="bg-[#F8F8FF] flex flex-col w-full h-auto px-8 pt-0 pb-8 lg:p-32 items-start justify-center">
       <p className="text-[#F13F0C] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-4 lg:mt-8">
@@ -50,7 +50,7 @@ const ReadMore = () => {
   );
 };
 
-export default ReadMore;
+export default Documentations;
 
 const Links = ({ background, backgroundhover, ring, text, icon, name }) => {
   return (
