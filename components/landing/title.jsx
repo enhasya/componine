@@ -1,8 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-const { default: DocumentationsIcon } = require("@/shared/icons/book-02-dark.svg");
-const { default: FindComponentsIcon } = require("@/shared/icons/compass-dark.svg");
+const {
+  default: DocumentationsIcon,
+} = require("@/shared/icons/book-02-dark.svg");
+const {
+  default: FindComponentsIcon,
+} = require("@/shared/icons/compass-dark.svg");
 const {
   default: ExploreNowIcon,
 } = require("@/shared/icons/down-arrow-colorized.svg");
@@ -21,9 +25,10 @@ const Title = () => {
         {Context.Subtitle}
       </h2>
       <h1 className="text-[#E2A786] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[480px] mt-4 lg:mt-8">
-        {Context.Title}<span className="text-[#7A6254]"> — React.js Components Library</span>
+        {Context.Title}
+        <span className="text-[#7A6254]"> — React.js Components Library</span>
       </h1>
-      <h3 className="text-[#7A6254]/80 font-medium text-xs lg:text-base tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[640px] mt-4 lg:mt-8">
+      <h3 className="text-[#7A6254] font-medium text-xs lg:text-base tracking-tight leading-relaxed lg:leading-relaxed text-start lg:text-center w-full lg:w-[640px] mt-4 lg:mt-8">
         {Context.Description}{" "}
       </h3>
       <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-center mt-8 lg:mt-16">
