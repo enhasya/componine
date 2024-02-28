@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-const { default: Documentations } = require("@/shared/icons/book-02-dark.svg");
-const { default: FindComponents } = require("@/shared/icons/compass-dark.svg");
+const { default: DocumentationsIcon } = require("@/shared/icons/book-02-dark.svg");
+const { default: FindComponentsIcon } = require("@/shared/icons/compass-dark.svg");
 const {
-  default: ExploreNow,
+  default: ExploreNowIcon,
 } = require("@/shared/icons/down-arrow-colorized.svg");
 
 const Context = {
@@ -32,21 +32,21 @@ const Title = () => {
           backgroundhover={"hover:bg-[#F13F0C]/20"}
           ring={"ring-1 ring-[#F13F0C]"}
           text={"text-[#F13F0C]"}
-          icon={ExploreNow}
+          icon={ExploreNowIcon}
           name={"Explore Now"}
         />
         <Links
           background={"bg-[#161619]/10"}
           backgroundhover={"hover:bg-[#161619]/20"}
           text={"text-[#161619]"}
-          icon={Documentations}
+          icon={DocumentationsIcon}
           name={"Documentations"}
         />
         <Links
           background={"bg-[#161619]/10"}
           backgroundhover={"hover:bg-[#161619]/20"}
           text={"text-[#161619]"}
-          icon={FindComponents}
+          icon={FindComponentsIcon}
           name={"Find Components"}
         />
       </div>

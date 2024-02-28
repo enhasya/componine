@@ -4,12 +4,12 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const { default: Expand } = require("@/shared/icons/chevron-down-dark.svg");
-const { default: Componine } = require("@/shared/icons/wind-01-colorized.svg");
-const { default: Documentations } = require("@/shared/icons/book-02-dark.svg");
-const { default: Components } = require("@/shared/icons/compass-dark.svg");
-const { default: Pricing } = require("@/shared/icons/coin-broken-dark.svg");
-const { default: Developer } = require("@/shared/icons/code-04-dark.svg");
-const { default: Contact } = require("@/shared/icons/phone-dark.svg");
+const { default: ComponineIcon } = require("@/shared/icons/wind-01-colorized.svg");
+const { default: DocumentationsIcon } = require("@/shared/icons/book-02-dark.svg");
+const { default: ComponentsIcon } = require("@/shared/icons/compass-dark.svg");
+const { default: PricingIcon } = require("@/shared/icons/coin-broken-dark.svg");
+const { default: DeveloperIcon } = require("@/shared/icons/code-04-dark.svg");
+const { default: ContactIcon } = require("@/shared/icons/phone-dark.svg");
 
 const Context = {
   Introduction: "Introducing Componine",
@@ -34,7 +34,7 @@ const Navbar = () => {
       <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-2 items-start lg:items-center justify-start">
         <div className="flex lg:hidden flex-row w-full lg:w-auto gap-4 lg:gap-2 items-center justify-between">
           <Section
-            icon={Componine}
+            icon={ComponineIcon}
             name={"Componine"}
             description={Context.Description}
           />
@@ -55,19 +55,19 @@ const Navbar = () => {
       {expand && (
         <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 lg:gap-2 items-start lg:items-center justify-end">
           <Section
-            icon={Documentations}
+            icon={DocumentationsIcon}
             name={"Documentations"}
             description={
               "Unlock the full potential of our React.js Components Library today. Happy coding!"
             }
           />
           <Section
-            icon={Components}
+            icon={ComponentsIcon}
             name={"Components"}
             description={"Discover the power of seamless component exploration. Navigating through our extensive React.js Components Library has never been more intuitive."}
           />
           <Section
-            icon={Pricing}
+            icon={PricingIcon}
             name={"Pricing"}
             description={"Transparent and flexible pricing plans tailored to suit your needs"}
           />
@@ -77,12 +77,12 @@ const Navbar = () => {
             </p>
           </label>
           <Section
-            icon={Developer}
+            icon={DeveloperIcon}
             name={"Developer"}
             description={"With years of experience under our belts, we bring a diverse range of skills and perspectives to the table, ensuring that our library meets the needs of developers at every level."}
           />
           <Section
-            icon={Contact}
+            icon={ContactIcon}
             name={"Contact"}
             description={"Our contact page is the gateway to connecting with our team and getting the support you need."}
           />
@@ -97,7 +97,7 @@ export default Navbar;
 const Notifications = () => {
   return (
     <button className="bg-[#F13F0C]/10 ring-1 ring-[#F13F0C] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#F13F0C]/20 hidden lg:flex flex-row gap-2 items-center w-full lg:w-auto rounded-none lg:rounded-full px-4 py-2 mt-0">
-      <Image src={Componine} width="14" height="14" />
+      <Image src={ComponineIcon} width="14" height="14" />
       <p className="text-[#161619] font-medium text-xs tracking-tight leading-relaxed">
         <span className="font-bold">{Context.Introduction}</span> —{" "}
         <span className="text-[#161619]/80">{Context.Description}</span>
