@@ -4,7 +4,9 @@ import CSS from "@/module/styles/landing.module.css";
 
 const { default: Navbar } = require("@/components/navbar");
 const { default: Title } = require("@/components/landing/title");
-const { default: Documentations } = require("@/components/landing/documentations");
+const {
+  default: Documentations,
+} = require("@/components/landing/documentations");
 
 const LandingLayout = () => {
   return (

@@ -40,7 +40,7 @@ const Navbar = () => {
           />
           <button
             onClick={handleExpand}
-            className="bg-[#161619]/10 ring-1 ring-[#161619] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#161619]/20 flex flex-row gap-2 items-center w-auto rounded-none lg:rounded-full px-2 py-2 mt-0"
+            className="bg-[#7A6254]/10 ring-1 ring-[#7A6254] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#7A6254]/20 flex flex-row gap-2 items-center w-auto rounded-none lg:rounded-full px-2 py-2 mt-0"
           >
             <Image
               src={Expand}
@@ -72,7 +72,7 @@ const Navbar = () => {
             description={"Transparent and flexible pricing plans tailored to suit your needs"}
           />
           <label className="bg-transparent hidden lg:flex flex-row gap-2 items-center w-full lg:w-auto rounded-none p-0 mt-0">
-            <p className="text-[#161619]/20 font-medium text-xs tracking-tight leading-relaxed">
+            <p className="text-[#7A6254]/20 font-medium text-xs tracking-tight leading-relaxed">
               |
             </p>
           </label>
@@ -96,11 +96,11 @@ export default Navbar;
 
 const Notifications = () => {
   return (
-    <button className="bg-[#F13F0C]/10 ring-1 ring-[#F13F0C] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#F13F0C]/20 hidden lg:flex flex-row gap-2 items-center w-full lg:w-auto rounded-none lg:rounded-full px-4 py-2 mt-0">
+    <button className="bg-[#E2A786]/10 ring-1 ring-[#E2A786] transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#E2A786]/20 hidden lg:flex flex-row gap-2 items-center w-full lg:w-auto rounded-none lg:rounded-full px-4 py-2 mt-0">
       <Image src={ComponineIcon} width="14" height="14" />
-      <p className="text-[#161619] font-medium text-xs tracking-tight leading-relaxed">
+      <p className="text-[#7A6254] font-medium text-xs tracking-tight leading-relaxed">
         <span className="font-bold">{Context.Introduction}</span> —{" "}
-        <span className="text-[#161619]/80">{Context.Description}</span>
+        <span className="text-[#7A6254]/80">{Context.Description}</span>
       </p>
     </button>
   );
@@ -108,15 +108,15 @@ const Notifications = () => {
 
 const Section = ({ icon, name, description }) => {
   return (
-    <button className="bg-transparent transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-black/10 flex flex-col gap-2 items-center w-full lg:w-auto rounded-none lg:rounded-full p-0 lg:px-4 lg:py-2 mt-0">
+    <button className="bg-transparent transition-all hover:opacity-80 lg:hover:opacity-100 lg:hover:bg-[#E2A786]/10 flex flex-col gap-2 items-center w-full lg:w-auto rounded-none lg:rounded-full p-0 lg:px-4 lg:py-2 mt-0">
       <div className="flex flex-row gap-2 items-center w-full lg:w-auto">
         <Image src={icon} className="flex lg:hidden" width="14" height="14" />
-        <p className="text-[#161619] font-semibold lg:font-medium text-xs text-start lg:text-center tracking-tight leading-relaxed">
+        <p className="text-[#7A6254] font-semibold lg:font-medium text-xs text-start lg:text-center tracking-tight leading-relaxed">
           {name}
         </p>
       </div>
       <div className="flex lg:hidden flex-row gap-2 items-center w-full lg:w-auto">
-        <p className="text-[#161619]/80 font-medium text-xs text-start lg:text-center tracking-tight leading-relaxed">
+        <p className="text-[#7A6254]/80 font-medium text-xs text-start lg:text-center tracking-tight leading-relaxed">
           {description}
         </p>
       </div>

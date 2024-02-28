@@ -1,50 +1,90 @@
 import React from "react";
 import Image from "next/image";
 
-const { default: DocumentationsIcon } = require("@/shared/icons/book-02-dark.svg");
-const { default: FindComponentsIcon } = require("@/shared/icons/compass-dark.svg");
+const {
+  default: DocumentationsIcon,
+} = require("@/shared/icons/book-02-dark.svg");
+const {
+  default: FindComponentsIcon,
+} = require("@/shared/icons/compass-dark.svg");
 const {
   default: ExploreNowIcon,
 } = require("@/shared/icons/down-arrow-colorized.svg");
 
 const Context = {
-  Title: "Componine",
+  Title: "Documentations",
   Description:
-    "Unlock the full potential of your React.js projects. The ultimate collection of meticulously crafted and highly customizable React components. Elevate your web development experience by integrating our components seamlessly into your applications, saving time and ensuring a polished, professional look.",
+    "A comprehensive React.js components library designed to streamline your web development process. Whether you're a seasoned developer or just starting with React, our library provides a collection of reusable and customizable UI components to enhance the aesthetics and functionality of your applications.",
 };
 
 const Documentations = () => {
   return (
-    <main className="bg-[#F8F8FF] flex flex-col w-full h-auto px-8 pt-0 pb-8 lg:p-32 items-start justify-center">
-      <p className="text-[#F13F0C] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[480px] mt-4 lg:mt-8">
-        {Context.Title}<span className="text-[#161619]"> — React.js Components Library</span>
-      </p>
-      <p className="text-[#161619]/80 font-medium text-xs lg:text-base tracking-tight leading-relaxed lg:leading-relaxed text-start w-full lg:w-[640px] mt-4 lg:mt-8">
-        {Context.Description}{" "}
-      </p>
-      <div className="flex flex-row flex-wrap gap-4 w-full lg:w-[640px] h-auto items-center justify-start mt-8 lg:mt-16">
-        <Links
-          background={"bg-[#F13F0C]/10"}
-          backgroundhover={"hover:bg-[#F13F0C]/20"}
-          ring={"ring-1 ring-[#F13F0C]"}
-          text={"text-[#F13F0C]"}
-          icon={ExploreNowIcon}
-          name={"Explore Now"}
-        />
-        <Links
-          background={"bg-[#161619]/10"}
-          backgroundhover={"hover:bg-[#161619]/20"}
-          text={"text-[#161619]"}
-          icon={DocumentationsIcon}
-          name={"Documentations"}
-        />
-        <Links
-          background={"bg-[#161619]/10"}
-          backgroundhover={"hover:bg-[#161619]/20"}
-          text={"text-[#161619]"}
-          icon={FindComponentsIcon}
-          name={"Find Components"}
-        />
+    <main className="bg-[#F8F8FF] flex flex-col lg:flex-row w-full h-auto gap-8 lg:gap-16 px-8 pt-0 pb-8 lg:p-32 items-start justify-between">
+      <div className="flex flex-col items-start justify-center w-full lg:w-[40%] h-auto p-0">
+        <p className="text-[#E2A786] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full mt-0">
+          {Context.Title}
+          <span className="text-[#7A6254]"></span>
+        </p>
+        <p className="text-[#7A6254] font-medium text-xs lg:text-base tracking-tight leading-relaxed lg:leading-relaxed text-start w-full mt-4 lg:mt-8">
+          {Context.Description}{" "}
+        </p>
+        <div className="flex flex-row flex-wrap gap-4 w-full h-auto items-center justify-start mt-8 lg:mt-16">
+          <Links
+            background={"bg-[#E2A786]/10"}
+            backgroundhover={"hover:bg-[#E2A786]/20"}
+            ring={"ring-1 ring-[#E2A786]"}
+            text={"text-[#E2A786]"}
+            icon={ExploreNowIcon}
+            name={"Explore Now"}
+          />
+          <Links
+            background={"bg-[#7A6254]/10"}
+            backgroundhover={"hover:bg-[#7A6254]/20"}
+            text={"text-[#7A6254]"}
+            icon={DocumentationsIcon}
+            name={"Documentations"}
+          />
+          <Links
+            background={"bg-[#7A6254]/10"}
+            backgroundhover={"hover:bg-[#7A6254]/20"}
+            text={"text-[#7A6254]"}
+            icon={FindComponentsIcon}
+            name={"Find Components"}
+          />
+        </div>
+      </div>
+      <div className="bg-slate-100 flex flex-col items-start justify-center w-full lg:w-[40%] h-auto p-8 rounded-lg drop-shadow-lg">
+        <p className="text-[#E2A786] font-semibold text-lg lg:text-2xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full mt-0">
+          Cart
+          <span className="text-[#7A6254]"></span>
+        </p>
+        <p className="text-[#7A6254]/80 font-medium text-xs lg:text-base tracking-tight leading-relaxed lg:leading-relaxed text-start w-full mt-4 lg:mt-8">
+          {Context.Description}{" "}
+        </p>
+        <div className="flex flex-row flex-wrap gap-4 w-full h-auto items-center justify-start mt-8 lg:mt-16">
+          <Links
+            background={"bg-[#E2A786]/10"}
+            backgroundhover={"hover:bg-[#E2A786]/20"}
+            ring={"ring-1 ring-[#E2A786]"}
+            text={"text-[#E2A786]"}
+            icon={ExploreNowIcon}
+            name={"Explore Now"}
+          />
+          <Links
+            background={"bg-[#7A6254]/10"}
+            backgroundhover={"hover:bg-[#7A6254]/20"}
+            text={"text-[#7A6254]"}
+            icon={DocumentationsIcon}
+            name={"Documentations"}
+          />
+          <Links
+            background={"bg-[#7A6254]/10"}
+            backgroundhover={"hover:bg-[#7A6254]/20"}
+            text={"text-[#7A6254]"}
+            icon={FindComponentsIcon}
+            name={"Find Components"}
+          />
+        </div>
       </div>
     </main>
   );
