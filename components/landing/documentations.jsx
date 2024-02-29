@@ -19,7 +19,7 @@ const Context = {
 
 const Documentations = () => {
   return (
-    <main className="bg-[#F8F8FF] flex flex-col lg:flex-row w-full h-auto gap-8 lg:gap-16 px-8 pt-0 pb-8 lg:p-32 items-start justify-between">
+    <main className="bg-[#F8F8FF] flex flex-col lg:flex-row w-full h-auto gap-8 lg:gap-16 px-8 pt-0 pb-8 lg:p-32 items-start justify-center">
       <div className="flex flex-col items-start justify-center w-full lg:w-[40%] h-auto p-0">
         <p className="text-[#E2A786] font-semibold text-2xl lg:text-4xl tracking-tight leading-relaxed lg:leading-relaxed text-start w-full mt-0">
           {Context.Title}
